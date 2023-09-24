@@ -12,9 +12,9 @@ struct MainView: View {
     @State var currentTab: Tab = .home
     @Namespace var animation
     
-    init() {
-        UITabBar.appearance().isHidden = true
-    }
+//    init() {
+//        UITabBar.appearance().isHidden = true
+//    }
     
     var body: some View {
         ZStack(alignment: .bottom) {

@@ -118,6 +118,7 @@ struct Home: View {
             .padding(.horizontal,3)
         }
     }
+    
     var tags: [String] = ["All", "Sport", "Travel", "Politic", "Technology", "Education", "Games", "Business"]
 
 }
