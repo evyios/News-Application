@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C06C9AE2ABEFDC30078CE91 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06C9AD2ABEFDC30078CE91 /* Home.swift */; };
 		5C6AF4642ABE20BA00883ECC /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */; };
 		5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70A03E2ABC383A00EC4FC3 /* News_AppApp.swift */; };
 		5C70A0412ABC383A00EC4FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70A0402ABC383A00EC4FC3 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C06C9AD2ABEFDC30078CE91 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		5C70A03B2ABC383A00EC4FC3 /* News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C70A03E2ABC383A00EC4FC3 /* News_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_AppApp.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				5CAA4D3D2ABDDC1A008EFBB5 /* MainView.swift */,
 				5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */,
+				5C06C9AD2ABEFDC30078CE91 /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				5C6AF4642ABE20BA00883ECC /* CustomCorner.swift in Sources */,
 				5CAA4D3E2ABDDC1A008EFBB5 /* MainView.swift in Sources */,
 				5C70A04E2ABC3A0B00EC4FC3 /* News.swift in Sources */,
+				5C06C9AE2ABEFDC30078CE91 /* Home.swift in Sources */,
 				5C70A0412ABC383A00EC4FC3 /* ContentView.swift in Sources */,
 				5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */,
 				5C70A0512ABC4F5900EC4FC3 /* HomeVM.swift in Sources */,

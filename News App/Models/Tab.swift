@@ -10,6 +10,6 @@ import SwiftUI
 enum Tab: String, CaseIterable {
     case home = "home"
     case trending = "fire"
-    case notification = "notifications"
+    case settings = "settings"
     case profile = "profile"
 }

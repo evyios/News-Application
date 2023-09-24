@@ -19,7 +19,7 @@ struct MainView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $currentTab) {
-                Text("Home")
+                Home()
                     .setTabBackground(color: Color("background"))
                     .tag(Tab.home)
                 
@@ -27,9 +27,9 @@ struct MainView: View {
                     .setTabBackground(color: Color("background"))
                     .tag(Tab.trending)
                 
-                Text("Notifications")
+                Text("Settings")
                     .setTabBackground(color: Color("background"))
-                    .tag(Tab.notification)
+                    .tag(Tab.settings)
                 
                 Text("Profile")
                     .setTabBackground(color: Color("background"))
