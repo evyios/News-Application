@@ -12,7 +12,30 @@ struct NewsRowView: View {
     let news: News
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 0) {
+            Image("image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 120)
+                .cornerRadius(8)
+                .padding(10)
+                
+            
+            VStack(alignment: .leading, spacing: 10) {
+                Text(news.title)
+                    .font(.callout)
+                    .fontWeight(.bold)
+                
+                    Text("By \(news.author)")
+                        .font(.callout)
+                        .fontWeight(.regular)
+                    Text(news.publishedAt.convertDateString() ?? "Unknown date")
+                        .font(.callout)
+                        .fontWeight(.regular)
+               
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 
