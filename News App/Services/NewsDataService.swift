@@ -21,7 +21,7 @@ class NewsDataService: ObservableObject {
     }
     
      private func getNews() {
-        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=dd4ce7c6e3dd435882acc60363ceed60")
+        guard let url = URL(string: "https://api.spaceflightnewsapi.net/v3/articles")
         else { return }
         
         newsSubscription = URLSession.shared.dataTaskPublisher(for: url)

@@ -22,13 +22,13 @@ class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() { }
     
-    let news = News(
-        author: "Neesha A. Tambe",
-        title: "Here are the 6 finalists of Startup Battlefield at Disrupt 2023 | TechCrunch",
-        description: "During the last two days, 20 startups pitched their companies as part of TechCrunch Startup Battlefield at Disrupt 2023. These 20 companies were selected",
-        url: "https://techcrunch.com/2023/09/20/here-are-the-6-finalists-of-startup-battlefield-at-disrupt-2023/",
-        urlToImage: "https://techcrunch.com/wp-content/uploads/2023/09/TC22-startup-battlefield-finalists-2023.jpg?w=1200",
-        publishedAt: "2023-09-21T02:35:37Z",
-        content: "During the last two days, 20 startups pitched their companies as part of TechCrunch Startup Battlefield at Disrupt 2023. These 20 companies were selected as the best of the Startup Battlefield 200 an… [+445 chars]")
+    let homeVM = HomeVM()
     
+    let news = News(id: 20975,
+                    title: "Sierra Space raises $290 million",
+                    url: "https://spacenews.com/sierra-space-raises-290-million/",
+                    imageUrl: "https://spacenews.com/wp-content/uploads/2023/09/sierraspace-2023-300x185.jpg",
+                    newsSite: "SpaceNews",
+                    summary: "Sierra Space has raised $290 million in a round led by Japanese investors, providing the company with additional funding to accelerate work on its Dream Chaser vehicle and commercial space stations.",
+                    publishedAt: "2023-09-26T12:00:00Z")
 }

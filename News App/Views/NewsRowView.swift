@@ -26,16 +26,18 @@ struct NewsRowView: View {
                     .font(.callout)
                     .fontWeight(.bold)
                 
-                    Text("By \(news.author)")
-                        .font(.callout)
-                        .fontWeight(.regular)
-                    Text(news.publishedAt.convertDateString() ?? "Unknown date")
-                        .font(.callout)
-                        .fontWeight(.regular)
+//                    Text("By \(news.author)")
+//                        .font(.subheadline)
+//                        .fontWeight(.regular)
+//                    Text(news.publishedAt.convertDateString() ?? "Unknown date")
+//                        .font(.subheadline)
+//                        .fontWeight(.regular)
                
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        .padding(.horizontal,-10)
+        .padding(.trailing,5)
     }
 }
 

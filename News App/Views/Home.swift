@@ -12,6 +12,8 @@ struct Home: View {
     @State private var activeTag: String = "All"
     @Namespace private var animation
     
+    @EnvironmentObject var vm: HomeVM
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 15) {
@@ -20,7 +22,10 @@ struct Home: View {
                 homeImage
                 
                 Tags()
-
+                
+                    ForEach(vm.news) { news in
+                            NewsRowView(news: news)
+                }
             }
             .padding(15)
             .padding(.bottom,50)
@@ -125,7 +130,10 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationStack {
+            ContentView()
+                .environmentObject(dev.homeVM)
+        }
     }
 }
 

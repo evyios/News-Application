@@ -9,32 +9,55 @@ import Foundation
 
 
 /*
- Url: https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=dd4ce7c6e3dd435882acc60363ceed60
+ Url: https://api.spaceflightnewsapi.net/v4/articles/
  
  Response:
  {
- -"source": {
- "id": "techcrunch",
- "name": "TechCrunch"
- },
- "author": "Neesha A. Tambe",
- "title": "Here are the 6 finalists of Startup Battlefield at Disrupt 2023 | TechCrunch",
- "description": "During the last two days, 20 startups pitched their companies as part of TechCrunch Startup Battlefield at Disrupt 2023. These 20 companies were selected",
- "url": "https://techcrunch.com/2023/09/20/here-are-the-6-finalists-of-startup-battlefield-at-disrupt-2023/",
- "urlToImage": "https://techcrunch.com/wp-content/uploads/2023/09/TC22-startup-battlefield-finalists-2023.jpg?w=1200",
- "publishedAt": "2023-09-21T02:35:37Z",
- "content": "During the last two days, 20 startups pitched their companies as part of TechCrunch Startup Battlefield at Disrupt 2023. These 20 companies were selected as the best of the Startup Battlefield 200 an… [+445 chars]"
- }
+   "count": 18049,
+   "next": "https://api.spaceflightnewsapi.net/v3/articles",
+   "previous": null,
+   "results": [
+     {
+       "id": 20975,
+       "title": "Sierra Space raises $290 million",
+       "url": "https://spacenews.com/sierra-space-raises-290-million/",
+       "image_url": "https://spacenews.com/wp-content/uploads/2023/09/sierraspace-2023-300x185.jpg",
+       "news_site": "SpaceNews",
+       "summary": "Sierra Space has raised $290 million in a round led by Japanese investors, providing the company with additional funding to accelerate work on its Dream Chaser vehicle and commercial space stations.",
+       "published_at": "2023-09-26T12:00:00Z",
+       "updated_at": "2023-09-26T12:07:49.838000Z",
+       "featured": false,
+       "launches": [],
+       "events": []
+     }
  */
 
-struct News: Identifiable, Codable {
-    var id = UUID().uuidString
-    let author: String
-    let title: String
-    let description: String
-    let url: String
-    let urlToImage: String
-    let publishedAt: String
-    let content: String
+//struct News: Codable, Identifiable, Hashable {
+//    var id: Int
+//    var title: String
+//    var url: String
+//    var imageUrl: String
+//    var newsSite: String
+//    var summary: String
+//    var publishedAt: String
+//
+//    enum CodingKeys: String, CodingKey {
+//        case id, title, url
+//        case imageUrl = "image_url"
+//        case newsSite = "news_site"
+//        case summary
+//        case publishedAt = "published_at"
+//    }
+//}
+
+struct News : Codable, Identifiable, Hashable {
+    var id: Int
+    var title: String
+    var url: String
+    var imageUrl: String
+    var newsSite: String
+    var summary: String
+    var publishedAt: String
 }
+
 
