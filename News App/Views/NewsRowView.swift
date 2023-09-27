@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct NewsRowView: View {
     
@@ -13,13 +14,21 @@ struct NewsRowView: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            Image("image")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 150, height: 120)
-                .cornerRadius(8)
-                .padding(10)
-                
+            
+            CachedAsyncImage(url: URL(string: news.imageUrl), transaction: Transaction(animation: .easeInOut)) { item in
+                if let image = item.image {
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 150, height: 120)
+                        .cornerRadius(8)
+                        .padding(10)
+                } else {
+                    HStack {
+                        ProgressView()
+                    }
+                }
+            }
             
             VStack(alignment: .leading, spacing: 12) {
                 Text(news.title)
@@ -27,10 +36,10 @@ struct NewsRowView: View {
                     .fontWeight(.bold)
                     .lineLimit(2)
                 
-                Text(news.newsSite)
+                Text(news.newsSite ?? "Unknown publisher")
                     .font(.subheadline)
                     .fontWeight(.regular)
-                Text(news.publishedAt.convertDateString() ?? "Unknown date")
+                Text(news.publishedAt?.convertDateString() ?? "Unknown date")
                     .font(.subheadline)
                     .fontWeight(.regular)
                

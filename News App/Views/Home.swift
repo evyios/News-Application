@@ -23,8 +23,8 @@ struct Home: View {
                 
                 Tags()
                 
-                    ForEach(vm.news) { news in
-                            NewsRowView(news: news)
+                ForEach(vm.news) { news in
+                    NewsRowView(news: news)
                 }
             }
             .padding(15)

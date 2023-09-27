@@ -51,9 +51,9 @@ struct News : Codable, Identifiable, Hashable {
     var title: String
     var url: String
     var imageUrl: String
-    var newsSite: String
+    var newsSite: String?
     var summary: String
-    var publishedAt: String
+    var publishedAt: String?
 }
 
 
