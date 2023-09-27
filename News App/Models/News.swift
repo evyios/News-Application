@@ -9,27 +9,21 @@ import Foundation
 
 
 /*
- Url: https://api.spaceflightnewsapi.net/v4/articles/
+ Url: https://api.spaceflightnewsapi.net/v3/articles
  
  Response:
  {
-   "count": 18049,
-   "next": "https://api.spaceflightnewsapi.net/v3/articles",
-   "previous": null,
-   "results": [
-     {
-       "id": 20975,
-       "title": "Sierra Space raises $290 million",
-       "url": "https://spacenews.com/sierra-space-raises-290-million/",
-       "image_url": "https://spacenews.com/wp-content/uploads/2023/09/sierraspace-2023-300x185.jpg",
-       "news_site": "SpaceNews",
-       "summary": "Sierra Space has raised $290 million in a round led by Japanese investors, providing the company with additional funding to accelerate work on its Dream Chaser vehicle and commercial space stations.",
-       "published_at": "2023-09-26T12:00:00Z",
-       "updated_at": "2023-09-26T12:07:49.838000Z",
-       "featured": false,
-       "launches": [],
-       "events": []
-     }
+ "id":20985,
+ "title":"Space Force selects university partner to evaluate classified ground systems software",
+ "url":"https://spacenews.com/space-force-selects-university-partner-to-evaluate-classified-ground-systems-software/",
+ "imageUrl":"https://spacenews.com/wp-content/uploads/2023/09/image002-300x225.jpg","newsSite":"SpaceNews",
+ "summary":"The Space Force awarded a $10 million contract to the Johns Hopkins University Applied Physics Lab to evaluate the software and cybersecurity of ground systems being developed for a new classified satellite network.",
+ "publishedAt":"2023-09-27T00:03:16.000Z",
+ "updatedAt":"2023-09-27T00:07:49.739Z",
+ "featured":false,
+ "launches":[],
+ "events":[]
+ },
  */
 
 //struct News: Codable, Identifiable, Hashable {
@@ -42,7 +36,9 @@ import Foundation
 //    var publishedAt: String
 //
 //    enum CodingKeys: String, CodingKey {
-//        case id, title, url
+//        case id
+//        case title
+//        case url
 //        case imageUrl = "image_url"
 //        case newsSite = "news_site"
 //        case summary

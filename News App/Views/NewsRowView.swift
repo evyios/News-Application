@@ -21,17 +21,18 @@ struct NewsRowView: View {
                 .padding(10)
                 
             
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 12) {
                 Text(news.title)
-                    .font(.callout)
+                    .font(.title3)
                     .fontWeight(.bold)
+                    .lineLimit(2)
                 
-//                    Text("By \(news.author)")
-//                        .font(.subheadline)
-//                        .fontWeight(.regular)
-//                    Text(news.publishedAt.convertDateString() ?? "Unknown date")
-//                        .font(.subheadline)
-//                        .fontWeight(.regular)
+                Text(news.newsSite)
+                    .font(.subheadline)
+                    .fontWeight(.regular)
+                Text(news.publishedAt.convertDateString() ?? "Unknown date")
+                    .font(.subheadline)
+                    .fontWeight(.regular)
                
             }
         }

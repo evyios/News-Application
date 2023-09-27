@@ -11,7 +11,7 @@ import Foundation
 extension String {
     
     func convertDateString() -> String? {
-            return convert(dateString: self, fromDateFormat: "yyyy-MM-dd'T'HH:mm:ssZ", toDateFormat: "MMM d, y")
+            return convert(dateString: self, fromDateFormat: "yyyy-MM-dd'T'HH:mm:mm.ssZ", toDateFormat: "MMM d, y")
         }
 
 
