@@ -10,9 +10,9 @@ import SwiftUI
 struct Home: View {
     
     @State private var activeTag: String = "All"
-    @Namespace private var animation
+    var animation: Namespace.ID
     
-    @EnvironmentObject var vm: HomeVM
+    @StateObject var vm: HomeVM = .init()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -132,7 +132,6 @@ struct Home_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ContentView()
-                .environmentObject(dev.homeVM)
         }
     }
 }
