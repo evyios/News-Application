@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  News App
 //
-//  Created by Evgeny on 30.09.23.
+//  Created by Evgeny on 2.10.23.
 //
 
 import SwiftUI
