@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C03EE0C2ACB3057005910C4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03EE0B2ACB3057005910C4 /* DetailView.swift */; };
 		5C06C9AE2ABEFDC30078CE91 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06C9AD2ABEFDC30078CE91 /* Home.swift */; };
 		5C6AF4642ABE20BA00883ECC /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */; };
 		5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70A03E2ABC383A00EC4FC3 /* News_AppApp.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C03EE0B2ACB3057005910C4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5C06C9AD2ABEFDC30078CE91 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		5C70A03B2ABC383A00EC4FC3 /* News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */,
 				5C06C9AD2ABEFDC30078CE91 /* Home.swift */,
 				5CEE3F312AC03F9100359B9F /* NewsRowView.swift */,
+				5C03EE0B2ACB3057005910C4 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				5C70A04E2ABC3A0B00EC4FC3 /* News.swift in Sources */,
 				5C06C9AE2ABEFDC30078CE91 /* Home.swift in Sources */,
 				5CEE3F352AC0405C00359B9F /* PreviewProvider.swift in Sources */,
+				5C03EE0C2ACB3057005910C4 /* DetailView.swift in Sources */,
 				5C865E972AC092AE002ED629 /* Date.swift in Sources */,
 				5C70A0412ABC383A00EC4FC3 /* ContentView.swift in Sources */,
 				5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */,
@@ -283,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -337,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
