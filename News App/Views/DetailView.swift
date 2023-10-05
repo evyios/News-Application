@@ -20,6 +20,17 @@ struct DetailView: View {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
+                            .overlay(alignment: .topLeading) {
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                    Image(systemName: "arrow.left")
+                                        .font(.title2)
+                                        .foregroundStyle(.black)
+                                        .padding(20)
+                                        .background(Circle().fill(.white))
+                                        .padding(.horizontal, 70)
+                                        .padding(.vertical, 60)
+                                })
+                            }
                     } else {
                         HStack {
                             ProgressView()

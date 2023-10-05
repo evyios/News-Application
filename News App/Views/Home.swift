@@ -30,6 +30,7 @@ struct Home: View {
             .padding(15)
             .padding(.bottom,50)
         }
+        .padding(.bottom, 5)
     }
     
     @ViewBuilder
