@@ -12,6 +12,8 @@ struct DetailView: View {
     
     let news: News
     
+    var animation: Namespace.ID
+    
     @EnvironmentObject var sharedData: SharedData
     
     var body: some View {
@@ -22,6 +24,7 @@ struct DetailView: View {
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
+                            .matchedGeometryEffect(id: "\(news.id)IMAGE", in: animation)
                             .overlay(alignment: .topLeading) {
                                 Button(action: {
                                     withAnimation(.easeInOut) {
@@ -90,8 +93,8 @@ struct DetailView: View {
                             .font(.callout)
                             .fontWeight(.regular)
                     }
-                    .frame(maxWidth: .infinity)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -108,6 +111,7 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(news: DeveloperPreview.instance.news)
-        .environmentObject(SharedData())
+//    DetailView(news: DeveloperPreview.instance.news)
+//        .environmentObject(SharedData())
+    ContentView()
 }

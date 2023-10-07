@@ -12,6 +12,8 @@ struct MainView: View {
     @State var currentTab: Tab = .home
     @Namespace var animation
     
+    @StateObject var sharedData: SharedData = .init()
+    
 //    init() {
 //        UITabBar.appearance().isHidden = true
 //    }
@@ -20,6 +22,7 @@ struct MainView: View {
         ZStack(alignment: .bottom) {
             TabView(selection: $currentTab) {
                 Home(animation: animation)
+                    .environmentObject(sharedData)
                     .setTabBackground(color: Color("background"))
                     .tag(Tab.home)
                 
@@ -36,6 +39,14 @@ struct MainView: View {
                     .tag(Tab.profile)
             }
             TabBar()
+        }
+        .overlay {
+            ZStack {
+                if let news = sharedData.detailNews, sharedData.showDetail {
+                    DetailView(news: news, animation: animation)
+                        .environmentObject(sharedData)
+                }
+            }
         }
     }
     

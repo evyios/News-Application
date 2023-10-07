@@ -14,6 +14,8 @@ struct Home: View {
     
     @StateObject var vm: HomeVM = .init()
     
+    @EnvironmentObject var sharedData: SharedData
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 15) {
@@ -25,6 +27,12 @@ struct Home: View {
                 
                 ForEach(vm.news) { news in
                     NewsRowView(news: news)
+                        .onTapGesture {
+                            withAnimation(.easeInOut) {
+                                sharedData.detailNews = news
+                                sharedData.showDetail = true
+                            }
+                        }
                 }
             }
             .padding(15)
