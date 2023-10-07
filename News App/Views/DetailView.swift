@@ -67,11 +67,13 @@ struct DetailView: View {
                         Button {
                             
                         } label: {
-                            Image("fire")
+                            Image(systemName: "square.and.arrow.up")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 35, height: 35)
-                                .padding(6)
+                                .foregroundStyle(.black)
+                                .frame(width: 30, height: 30)
+                                .padding(10)
+                                .padding(.bottom,3)
                                 .background(Color.white, in: RoundedRectangle(cornerRadius: 15, style: .continuous))
                                 .shadow(color: .black.opacity(0.15), radius: 8, x: 5, y: 5)
                         }
@@ -93,6 +95,26 @@ struct DetailView: View {
                             .font(.callout)
                             .fontWeight(.regular)
                     }
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Add to Bookmarks")
+                            .font(.title2.bold())
+                            .foregroundStyle(.white)
+                            .padding(.vertical, 20)
+                            .frame(maxWidth: .infinity)
+                            .background {
+                                Color.gray
+                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    .shadow(color: .black.opacity(0.15), radius: 5, x: 5, y: 5)
+                            }
+                            
+                    }
+
+                    
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)

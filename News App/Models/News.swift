@@ -26,26 +26,6 @@ import Foundation
  },
  */
 
-//struct News: Codable, Identifiable, Hashable {
-//    var id: Int
-//    var title: String
-//    var url: String
-//    var imageUrl: String
-//    var newsSite: String
-//    var summary: String
-//    var publishedAt: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case title
-//        case url
-//        case imageUrl = "image_url"
-//        case newsSite = "news_site"
-//        case summary
-//        case publishedAt = "published_at"
-//    }
-//}
-
 struct News : Codable, Identifiable, Hashable {
     var id: Int
     var title: String
