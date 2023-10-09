@@ -170,7 +170,7 @@ extension Home {
                         }
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .foregroundColor(.white)
+                        .foregroundStyle(.white)
                         .padding(8)
                         .padding(.horizontal,10)
                         .padding(.leading, 5)

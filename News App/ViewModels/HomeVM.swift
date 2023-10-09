@@ -26,5 +26,4 @@ class HomeVM: ObservableObject {
             }
             .store(in: &cancallables)
     }
-    
 }

@@ -14,7 +14,7 @@ extension String {
             return convert(dateString: self, fromDateFormat: "yyyy-MM-dd'T'HH:mm:mm.ssZ", toDateFormat: "MMM d, y")
         }
 
-
+    
         func convert(dateString: String, fromDateFormat: String, toDateFormat: String) -> String? {
 
             let fromDateFormatter = DateFormatter()

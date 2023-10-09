@@ -46,6 +46,5 @@ class NewsDataService: ObservableObject {
                 self?.news = returnedNews
                 self?.newsSubscription?.cancel()
             }
-
     }
 }

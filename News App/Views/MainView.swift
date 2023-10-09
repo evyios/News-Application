@@ -14,28 +14,24 @@ struct MainView: View {
     
     @StateObject var sharedData: SharedData = .init()
     
-//    init() {
-//        UITabBar.appearance().isHidden = true
-//    }
-    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $currentTab) {
                 Home(animation: animation)
                     .environmentObject(sharedData)
-                    .setTabBackground(color: Color("background"))
+                    .setTabBackground(Color(.background))
                     .tag(Tab.home)
                 
                 Text("Trending")
-                    .setTabBackground(color: Color("background"))
+                    .setTabBackground(Color(.background))
                     .tag(Tab.trending)
                 
                 Text("Settings")
-                    .setTabBackground(color: Color("background"))
+                    .setTabBackground(Color(.background))
                     .tag(Tab.settings)
                 
                 Text("Profile")
-                    .setTabBackground(color: Color("background"))
+                    .setTabBackground(Color(.background))
                     .tag(Tab.profile)
             }
             TabBar()
@@ -99,7 +95,7 @@ struct MainView_Previews: PreviewProvider {
 
 extension View {
     @ViewBuilder
-    func setTabBackground(color: Color) -> some View {
+    func setTabBackground(_ color: Color) -> some View {
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
