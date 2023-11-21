@@ -16,5 +16,6 @@ struct News_AppApp: App {
                     .toolbar(.hidden)
             }
         }
+        .modelContainer(for: Notes.self)
     }
 }

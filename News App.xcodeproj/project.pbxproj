@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C03EE0C2ACB3057005910C4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03EE0B2ACB3057005910C4 /* DetailView.swift */; };
 		5C06C9AE2ABEFDC30078CE91 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C06C9AD2ABEFDC30078CE91 /* Home.swift */; };
+		5C51D7C42B0D33B300C5CDDC /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C51D7C32B0D33B300C5CDDC /* Notes.swift */; };
 		5C6AF4642ABE20BA00883ECC /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */; };
 		5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70A03E2ABC383A00EC4FC3 /* News_AppApp.swift */; };
 		5C70A0412ABC383A00EC4FC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70A0402ABC383A00EC4FC3 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		5C03EE0B2ACB3057005910C4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5C06C9AD2ABEFDC30078CE91 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5C51D7C32B0D33B300C5CDDC /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		5C6AF4632ABE20BA00883ECC /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		5C70A03B2ABC383A00EC4FC3 /* News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C70A03E2ABC383A00EC4FC3 /* News_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_AppApp.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				5C70A04D2ABC3A0B00EC4FC3 /* News.swift */,
 				5CAA4D3F2ABDDC56008EFBB5 /* Tab.swift */,
 				5CFF81D72ACFF71E00751C83 /* SharedData.swift */,
+				5C51D7C32B0D33B300C5CDDC /* Notes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				5CFF81D82ACFF71E00751C83 /* SharedData.swift in Sources */,
 				5C865E972AC092AE002ED629 /* Date.swift in Sources */,
 				5C70A0412ABC383A00EC4FC3 /* ContentView.swift in Sources */,
+				5C51D7C42B0D33B300C5CDDC /* Notes.swift in Sources */,
 				5C70A03F2ABC383A00EC4FC3 /* News_AppApp.swift in Sources */,
 				5C70A0512ABC4F5900EC4FC3 /* HomeVM.swift in Sources */,
 				5CAA4D402ABDDC56008EFBB5 /* Tab.swift in Sources */,
