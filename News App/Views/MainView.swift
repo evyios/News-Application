@@ -22,7 +22,7 @@ struct MainView: View {
                     .setTabBackground(Color(.background))
                     .tag(Tab.home)
                 
-                Text("Trending")
+                NotesView()
                     .setTabBackground(Color(.background))
                     .tag(Tab.trending)
                 
