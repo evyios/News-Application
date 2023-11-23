@@ -14,10 +14,12 @@ class Notes {
     var title: String
     var noteText: String
     var date: Date
+    var isImportant: Bool
     
-    init(title: String, noteText: String, date: Date) {
+    init(title: String, noteText: String, date: Date, isImportant: Bool) {
         self.title = title
         self.noteText = noteText
         self.date = date
+        self.isImportant = isImportant
     }
 }

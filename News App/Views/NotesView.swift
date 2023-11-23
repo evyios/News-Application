@@ -10,7 +10,7 @@ import SwiftData
 
 struct NotesView: View {
     
-    // Grouper Notes (to split based on the day)
+    /// Grouped Notes (to split based on the day)
     @Query(sort: [
         SortDescriptor(\Notes.date, order: .reverse)
     ], animation: .snappy) private var allNotes: [Notes]
