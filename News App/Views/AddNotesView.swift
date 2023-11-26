@@ -64,7 +64,10 @@ struct AddNotesView: View {
     
     /// Adding Note to the Swift Data
     func addNote() {
+        let notes = Notes(title: title, noteText: noteText, date: date, isImportant: isImportant)
+        context.insert(notes)
         
+        dismiss()
     }
 }
 

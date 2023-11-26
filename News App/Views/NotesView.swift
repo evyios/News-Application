@@ -21,7 +21,13 @@ struct NotesView: View {
     var body: some View {
         NavigationStack {
             List {
-                
+                ForEach(groupedNotes) { group in
+                    Section(group.groupedTitle) {
+                        ForEach(group.notes) { note in
+                            /// Card View
+                        }
+                    }
+                }
             }
             .navigationTitle("Notes")
             .overlay {
