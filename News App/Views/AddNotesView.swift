@@ -52,10 +52,16 @@ struct AddNotesView: View {
                     Button("Add") {
                         addNote()
                     }
+                    .disabled(addButtonDisable)
                 }
             }
         }
     }
+    /// Disable add button
+    var addButtonDisable: Bool {
+        return title.isEmpty || noteText.isEmpty
+    }
+    
     /// Adding Note to the Swift Data
     func addNote() {
         
