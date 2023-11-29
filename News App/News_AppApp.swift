@@ -11,10 +11,8 @@ import SwiftUI
 struct News_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
                 ContentView()
                     .toolbar(.hidden)
-            }
         }
         .modelContainer(for: Notes.self)
     }

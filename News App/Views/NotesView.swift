@@ -25,6 +25,7 @@ struct NotesView: View {
                     Section(group.groupedTitle) {
                         ForEach(group.notes) { note in
                             /// Card View
+                             NoteCardView(notes: note)
                         }
                     }
                 }
